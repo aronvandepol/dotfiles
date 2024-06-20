@@ -58,10 +58,6 @@
     "prefix": ["pyc"],
     "body": ["```{python} ", "$1", "```"]
   },
-  "pymark": {
-    "prefix": ["pym"],
-    "body": ["```python ", "$1", "```"]
-  },
   "rcode": {
     "prefix": ["rco"],
     "body": ["```{r} ", "$1", "```"]

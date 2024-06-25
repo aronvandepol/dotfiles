@@ -138,3 +138,6 @@ eval "$(zoxide init zsh)"
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)

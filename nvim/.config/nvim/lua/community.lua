@@ -9,6 +9,9 @@ return {
   { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.colorscheme.sonokai" },
   { import = "astrocommunity.colorscheme.nordic-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.motion.flash-nvim" },
+
   -- { import = "astrocommunity.bars-and-lines.lualine-nvim" },
   -- import/override with your plugins folder
 }

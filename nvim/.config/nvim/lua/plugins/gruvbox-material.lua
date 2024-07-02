@@ -16,8 +16,8 @@ return {
       vim.g.gruvbox_material_cursor = "auto"
     end,
     on_config_done = function()
-      -- vim.cmd "colorscheme gruvbox-material"
-      -- vim.g.lightline = { colorscheme = "gruvbox_material" }
+      vim.cmd "colorscheme gruvbox-material"
+      vim.g.lightline = { colorscheme = "gruvbox_material" }
     end,
   },
 }

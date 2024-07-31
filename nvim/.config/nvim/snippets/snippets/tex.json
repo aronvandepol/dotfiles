@@ -458,5 +458,16 @@
         "body": "\\autocites[$3][$2]{$1}",
         "description": "Automatically cite multiple references",
         "prefix": "autocites"
+    },
+    {
+    "include": {
+        "body": "\\include{${1:filename}}",
+        "description": "Include a LaTeX file",
+        "prefix": "include"
+    },
+    "input": {
+        "body": "\\input{${1:filename}}",
+        "description": "Input a LaTeX file",
+        "prefix": "input"
     }
 }

@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.colorscheme.nordic-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.motion.flash-nvim" },
+  -- { import = "astrocommunity.pack.quarto" },
 
   -- { import = "astrocommunity.bars-and-lines.lualine-nvim" },
   -- import/override with your plugins folder

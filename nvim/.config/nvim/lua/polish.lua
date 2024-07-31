@@ -16,10 +16,3 @@ vim.filetype.add {
     ["~/%.config/foo/.*"] = "fooscript",
   },
 }
-
--- Autocommand to set textwidth for Tex files
-vim.cmd([[
-  augroup TexSettings
-    autocmd FileType tex setlocal textwidth=80
-  augroup END
-]])

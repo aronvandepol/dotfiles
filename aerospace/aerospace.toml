@@ -213,9 +213,12 @@ run = "move-node-to-workspace S"
 
 [[on-window-detected]]
 if.app-id = 'com.culturedcode.ThingsMac'
-run = "move-node-to-workspace Z"
+run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
 if.app-id = 'com.apple.iCal'
-run = "move-node-to-workspace Z"
+run = "move-node-to-workspace 1"
 
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = "move-node-to-workspace V"

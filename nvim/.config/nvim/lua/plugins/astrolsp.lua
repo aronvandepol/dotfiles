@@ -45,6 +45,15 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      marksman = function(_, opts)
+        local util = require "lspconfig.util"
+        local capabilities = opts.capabilities or {}
+        require("lspconfig").marksman.setup {
+          capabilities = capabilities,
+          filetypes = { "markdown", "quarto" },
+          root_dir = util.root_pattern(".git", ".marksman.toml", "_quarto.yml"),
+        }
+      end,
     },
     -- customize how language servers are attached
     handlers = {

@@ -141,3 +141,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlightin
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+export PATH="$PATH:/Users/aron/Documents/3_resources/scripts"
+
+conda activate HQ

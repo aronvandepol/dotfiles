@@ -145,3 +145,11 @@ source <(fzf --zsh)
 export PATH="$PATH:/Users/aron/Documents/3_resources/scripts"
 
 conda activate HQ
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+alias vi="nvim"
+alias vim="nvim"
+alias ta='tmux attach-session -t'
+alias tm="tmux new -A -s"
+
+eval "$(/usr/libexec/path_helper)"

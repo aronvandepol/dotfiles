@@ -12,7 +12,18 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+
+# Run Sketchybar together with AeroSpace
+# sketchbar has a built-in detection of already running process,
+# so it won't be run twice on AeroSpace restart
+after-startup-command = ['exec-and-forget sketchybar']
+
+# Notify Sketchybar about workspace change
+exec-on-workspace-change = [
+    '/bin/bash',
+    '-c',
+    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -174,7 +185,7 @@ alt-shift-x = 'move-node-to-workspace X'
 alt-shift-y = 'move-node-to-workspace Y'
 alt-shift-z = 'move-node-to-workspace Z'
 
-alt-shift-f = 'fullscreen'
+# alt-shift-f = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -218,6 +229,23 @@ run = "move-node-to-workspace 1"
 [[on-window-detected]]
 if.app-id = 'com.apple.iCal'
 run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = 'com.kagi.kagimacOS'
+run = "move-node-to-workspace A"
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = "move-node-to-workspace O"
+
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+run = "move-node-to-workspace T"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = "move-node-to-workspace M"
+
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'

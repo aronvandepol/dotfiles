@@ -153,3 +153,9 @@ alias ta='tmux attach-session -t'
 alias tm="tmux new -A -s"
 
 eval "$(/usr/libexec/path_helper)"
+
+qpdf() {
+    local input=${1:-index.qmd}
+    local output=${2:-draft.pdf}
+    quarto render "$input" --output "$output" --to pdf
+}
